@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.takaobrog.androidapilab"
-        minSdk = 36
+        minSdk = 29
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -32,6 +32,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
