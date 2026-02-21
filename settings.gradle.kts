@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "Android API Lab"
 include(":app")
 include(":camera")
+include(":iftest")
