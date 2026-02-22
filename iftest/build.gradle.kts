@@ -18,7 +18,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.takaobrog.iftest.HiltTestRunner"
     }
 
     buildTypes {
@@ -56,4 +56,9 @@ dependencies {
 
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation("androidx.arch.core:core-testing:2.2.0")
+
+    // Hilt testing
+    androidTestImplementation("com.google.dagger:hilt-android-testing:2.57.1")
+    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.57.1")
 }
