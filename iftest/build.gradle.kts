@@ -61,4 +61,10 @@ dependencies {
     // Hilt testing
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.57.1")
     kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.57.1")
+
+    // Mockito（finalクラスをモックできるようにする）
+    testImplementation("org.mockito:mockito-inline:5.2.0")
+
+    // Kotlin用のMockito拡張（whenever等）
+    testImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
 }
